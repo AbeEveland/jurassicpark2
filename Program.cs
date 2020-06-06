@@ -30,7 +30,6 @@ namespace JurassicPark2
 
         class Dino
         {
-
             public string Name { get; set; }
             public string DietType { get; set; }
             public string WhenAcquired { get; set; }
@@ -46,13 +45,10 @@ namespace JurassicPark2
                 Console.WriteLine($"This is the dino's address   {thisDino.enclosurenumber}");
             }
         }
-
-
+        
         static void Main(string[] args)
         {
-
             var dinosaurs = new List<Dino>();
-
             var fluffy = new Dino
             {
                 name = "fluffy",
@@ -106,21 +102,9 @@ namespace JurassicPark2
 
             while (true)
             {
-
-                for (int i = 0; i < dinosaurs.Count; i++)
-                {
-
-                    //Console.WriteLine(i);
-                    //Console.WriteLine($"Name:             {dinosaurs.name}");
-                    //Console.WriteLine($"Diet:             {dinosaurs.diettype}");
-                    //Console.WriteLine($"When Acquired:    {dinosaurs.whenacquired}");
-                    //Console.WriteLine($"Weight:           {dinosaurs.weight}");
-                    //Console.WriteLine($"Enclosure Number: {dinosaurs.enclosurenumber}");
-                }
-
                 Console.WriteLine("(A)dd, (V)iew, (R)emove, (T)ransfer, (S)ummary, (Q)uit: ");
                 string choice = Console.ReadLine();
-
+                
                 /*view*/
                 if (choice == "V" || choice == "v")
                 {
@@ -150,7 +134,6 @@ namespace JurassicPark2
                     {
                         name = newname,
                         diettype = newdiettype,
-
                         whenacquired = newwhenacquired,
                         weight = newweight,
                         enclosurenumber = newenclosurenumber,
@@ -161,10 +144,8 @@ namespace JurassicPark2
                 /*remove*/
                 if (choice == "R" || choice == "r")
                 {
-
                     Console.WriteLine("Name of dino to remove");
                     var dinonametoremove = Console.ReadLine();
-
                     var removedino = dinosaurs.FirstOrDefault(Dino => Dino.name == dinonametoremove);
 
                     if (removedino == null) Console.WriteLine($"There is no dino named {dinonametoremove}");
@@ -175,9 +156,7 @@ namespace JurassicPark2
                         if (shouldweremove == "y") dinosaurs.Remove(removedino);
                     }
                 }
-
-
-                /*summary*/
+                /*summar/
                 if (choice == "S" || choice == "s")
                 {
                     // # summary # this command will display the number of carnivors and the number of herbavors.
