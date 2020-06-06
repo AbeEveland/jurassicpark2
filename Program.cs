@@ -31,13 +31,13 @@ namespace JurassicPark2
         class Dino
         {
 
-            public string name { get; set; }
-            public string diettype { get; set; }
-            public string whenacquired { get; set; }
-            public string weight { get; set; }
-            public int enclosurenumber { get; set; }
+            public string Name { get; set; }
+            public string DietType { get; set; }
+            public string WhenAcquired { get; set; }
+            public int Weight { get; set; }
+            public int EnclosureNumber { get; set; }
 
-            static void description(Dino thisDino)
+            static void Description(Dino thisDino)
             {
                 Console.WriteLine($"This is the dino's name      {thisDino.name}");
                 Console.WriteLine($"This is the dino's diet type {thisDino.diettype}");
