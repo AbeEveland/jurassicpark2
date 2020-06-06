@@ -104,7 +104,7 @@ namespace JurassicPark2
             dinosaurs.Add(max);
             dinosaurs.Add(brutus);
 
-            while (1 == 1)
+            while (true)
             {
 
                 for (int i = 0; i < dinosaurs.Count; i++)
